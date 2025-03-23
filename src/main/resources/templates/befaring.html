@@ -11,19 +11,19 @@
 </head>
 <body>
 <!-- Navigasjonslinje -->
-<nav class="navbar">
-    <div class="nav-left">
-        <a href="/">
-            <img src="/images/vrlogo.png" alt="Vann og Rør AS logo" class="logo" />
-        </a>
-    </div>
-    <div class="bedriftNavn">
-        <a href="/">Vann og Rør AS</a>
-    </div>
-    <div class="nav-right">
-        <a href="#">Kontakt</a>
-        <a href="#">Om oss</a>
-        <button class="toggle-theme" id="themeToggle">◑</button>
+<nav class="navbar fixed-top bg-white shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="nav-left">
+            <a href="/" class="nav-branding d-flex align-items-center text-decoration-none">
+                <img src="/images/vrlogo.png" alt="Vann og Rør AS logo" class="logo" />
+                <span class="bedriftNavn ms-2">Vann OG Rør AS</span>
+            </a>
+        </div>
+        <div class="nav-right d-flex align-items-center gap-3">
+            <a href="#">Kontakt</a>
+            <a href="#">Om oss</a>
+            <button class="toggle-theme btn btn-sm btn-outline-secondary" id="themeToggle">◑</button>
+        </div>
     </div>
 </nav>
 
