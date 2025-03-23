@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>Hjemmeside</title>
+    <title>RørleggerBedrift</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Nav på bedriften</h1>
+<!-- Navigasjonslinje -->
+<nav class="navbar">
+    <div class="nav-left">
+        <span class="logo">R</span>
+    </div>
+    <div class="nav-right">
+        <a href="#">Kontakt</a>
+        <a href="#">Om oss</a>
+        <!-- Valgfritt: en knapp for lys/mørk-modus -->
+        <button class="toggle-theme" id="themeToggle">◑</button>
+    </div>
+</nav>
+
+<!-- Hero-seksjon -->
+<header class="hero-section">
+    <h1>Kom i gang med rørleggertjenester!</h1>
+    <p class="subheading">En enkel måte å få hjelp med alt innen VVS – når du trenger det.</p>
+    <button class="cta-btn">Bestill befaring</button>
+</header>
+
+<!-- Videoseksjon -->
+<section class="video-section">
+    <div class="video-placeholder">
+        <!-- Her kan du legge inn en ekte YouTube-embed i stedet for placeholder -->
+        <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/xxxxxxxx"
+                title="YouTube video"
+                frameborder="0"
+                allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 RørleggerBedrift AS</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
