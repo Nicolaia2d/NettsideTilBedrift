@@ -11,4 +11,9 @@ public class WebController {
         return "index";
     }
 
+    @GetMapping("/befaring")
+    public String service(){
+        return "befaring";
+    }
+
 }
