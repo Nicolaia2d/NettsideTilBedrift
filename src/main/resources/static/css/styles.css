@@ -1,9 +1,4 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Kropp */
 body {
@@ -14,28 +9,32 @@ body {
     min-height: 100vh;
 }
 
-/* Navigasjonslinje */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-}
 
+
+
+
+/* Logo */
 .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    background: #ccc;
-    border-radius: 50%;
-    padding: 0.5rem 0.9rem;
-    color: #000;
+    height: 40px;
+    width: auto;
 }
 
-.nav-right a {
-    margin-right: 3rem;
-    text-decoration: none;
-    color: inherit;
+.bedriftNavn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #003366;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
     font-weight: 500;
+    color: #003366;
+}
+
+.navbar a:hover {
+    color: #0056b3;
 }
 
 .toggle-theme {
@@ -44,7 +43,7 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
     color: inherit;
-    padding-right: 0.5em;
+    padding-right: 1.5em;
 }
 
 /* Hero-seksjon */
