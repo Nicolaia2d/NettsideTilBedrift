@@ -79,14 +79,14 @@ body {
 }
 
 /* Videoseksjon */
-.video-section {
+.image-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
 }
 
-.video-placeholder iframe {
+.image-placeholder iframe {
     max-width: 100%;
     height: auto;
 }
