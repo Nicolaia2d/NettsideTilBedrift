@@ -14,6 +14,9 @@ body {
     height: 40px;
     width: auto;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .bedriftNavn {
     font-size: 1.2rem;
@@ -200,4 +203,133 @@ body.dark-mode .cta-btn {
 
 body.dark-mode .cta-btn:hover {
     background: #ccc;
+}
+
+/* Tjenestekort */
+.card {
+    border-radius: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #f9f9f9;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card-body i {
+    color: #0d6efd; /* Bootstrap primærfarge */
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* Seksjon med tjenester */
+section.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+section p.text-muted {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*
+om oss
+ */
+/* OM OSS-seksjon */
+section h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+section p,
+section li {
+    font-size: 1rem;
+    color: #444;
+}
+
+.rounded-circle {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+ul.list-unstyled li::before {
+    content: "✔ ";
+    color: #0d6efd;
+}
+@media (max-width: 576px) {
+    .rounded-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-right a {
+        margin-bottom: 0.5rem;
+    }
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #9ecbff;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a;
+    color: #e4e4e4;
+}
+#forklaringer .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+#forklaringer .card {
+    border-radius: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #f8f9fa;
+}
+
+#forklaringer .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+#forklaringer .card-title {
+    font-weight: 600;
+}
+#begrepSok {
+    max-width: 400px;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }

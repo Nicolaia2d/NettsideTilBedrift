@@ -1,4 +1,4 @@
-package com.home.rorleggernettside;
+package com.home.rorleggernettside.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +19,14 @@ public class WebController {
     @GetMapping("/befaring")
     public String visBefaring() {
         return "befaring";
+    }
+    @GetMapping("/tjenester")
+    public String visTjenester(){
+        return "tjenester";
+    }
+    @GetMapping("/omoss")
+    public String visOmoss(){
+        return "omoss";
     }
 
     @PostMapping("/befaring")

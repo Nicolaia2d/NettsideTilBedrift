@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vann og rør AS</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigasjonslinje -->
+<nav class="navbar fixed-top bg-white shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="nav-left">
+      <a href="/" class="nav-branding d-flex align-items-center text-decoration-none">
+        <img src="/images/vrlogo.png" alt="Vann og Rør AS logo" class="logo" />
+        <span class="bedriftNavn ms-2">Vann OG Rør AS</span>
+      </a>
+    </div>
+    <div class="nav-right d-flex align-items-center gap-3">
+      <a href="#tjenester">Tjenester</a>
+      <a href="/befaring">Kontakt oss</a>
+      <a href="/omoss">Om oss</a>
+      <button class="toggle-theme btn btn-sm btn-outline-secondary" id="themeToggle">◑</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero-seksjon -->
+<header class="hero-section container text-center mt-5 pt-5">
+  <h1 class="display-5 fw-bold">Velkommen til Vann og Rør AS</h1>
+  <p class="subheading">En enkel måte å få hjelp med alt innen VVS – når du trenger det.</p>
+  <button id="befaringbtn" class="cta-btn btn btn-primary">Bestill befaring</button>
+  <p>eller ring</p>
+  <p class="display-6 fw-bold">469 67 566</p>
+</header>
+
+<!-- Tjenester-seksjon -->
+<section id="tjenester" class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Hva vi tilbyr</h2>
+    <p class="text-muted">Profesjonelle VVS-tjenester for både private og bedrifter</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i class="bi bi-house-add fs-1 mb-3"></i>
+          <h5 class="card-title">Nyinstallasjoner</h5>
+          <p class="card-text">Vi installerer moderne VVS-løsninger i nybygg – effektivt og trygt.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i class="bi bi-hammer fs-1 mb-3"></i>
+          <h5 class="card-title">Rehabilitering</h5>
+          <p class="card-text">Oppgradering av eldre rørsystemer – vi gir nytt liv til gamle anlegg.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i class="bi bi-exclamation-triangle fs-1 mb-3"></i>
+          <h5 class="card-title">Akutte rørproblemer</h5>
+          <p class="card-text">Rask respons ved lekkasjer eller tette rør – vi er klare når det haster.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i class="bi bi-tools fs-1 mb-3"></i>
+          <h5 class="card-title">Vedlikehold</h5>
+          <p class="card-text">Forebyggende tjenester som forlenger levetiden på dine rørsystemer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i class="bi bi-building fs-1 mb-3"></i>
+          <h5 class="card-title">Bedriftstjenester</h5>
+          <p class="card-text">Skreddersydde løsninger for næringsbygg og eiendomsselskaper.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i class="bi bi-clock-history fs-1 mb-3"></i>
+          <h5 class="card-title">Døgnvakt</h5>
+          <p class="card-text">Tilgjengelig 24/7 for nødsituasjoner – vi er alltid bare én telefon unna.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Vanlige feil (FAQ) -->
+<section id="feil-og-arsaker" class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Typiske feil og vanlige årsaker</h2>
+  </div>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          Tett sluk
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Skyldes ofte fett, hår eller manglende vedlikehold.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          Dryppende kran
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Vanligvis en slitt pakning eller innsats som må skiftes.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+          Ingen varmtvann
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Ofte er berederen defekt eller slått av ved en feil.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+          Lekkasje
+        </button>
+      </h2>
+      <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Kan skyldes skadde koblinger, frosne rør eller ytre påvirkning.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+          Dårlig lukt
+        </button>
+      </h2>
+      <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">Ofte forårsaket av tørr vannlås eller bakterievekst i rør.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tips og triks -->
+<section id="tips" class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Tips og triks</h2>
+    <p class="text-muted">Enkle råd som kan spare deg for problemer og penger</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">🧼 Slik vedlikeholder du sluk og avløp</li>
+    <li class="list-group-item">🚿 Hva du bør gjøre ved lekkasje før rørlegger kommer</li>
+    <li class="list-group-item">❄️ Vintertips: unngå frosne rør</li>
+    <li class="list-group-item">🔍 Hvordan oppdage skjulte vannskader tidlig</li>
+  </ul>
+</section>
+
+
+
+<!-- Kundehistorier -->
+<section id="referanser" class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Kundehistorier</h2>
+    <p class="text-muted">Vi er stolte av arbeidet vårt – og det er kundene også</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="card shadow-sm border-0">
+        <img src="/images/etter-baderom.jpg" class="card-img-top" alt="Etter-bilde av baderom">
+        <div class="card-body">
+          <h5 class="card-title">Kari fra Oslo</h5>
+          <p class="card-text">"Vann og Rør hjalp meg med å pusse opp hele badet. Fantastisk resultat og god oppfølging hele veien!"</p>
+        </div>
+      </div>
+    </div>
+    <!-- Du kan legge til flere referanser her -->
+  </div>
+</section>
+
+<section id="forklaringer" class="container my-5">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">VVS-ordbok</h2>
+    <p class="text-muted">Hva betyr egentlig alle disse begrepene?</p>
+  </div>
+
+  <div class="mb-4 text-center">
+    <input type="text" id="begrepSok" class="form-control w-50 mx-auto" placeholder="Søk etter begrep...">
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    <!-- KORT 1 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="/images/servant.jpg" class="card-img-top" alt="Servant">
+        <div class="card-body">
+          <h5 class="card-title">Servant</h5>
+          <p class="card-text">Vasken på badet – ofte med underskap eller veggfeste.</p>
+        </div>
+      </div>
+    </div>
+    <!-- KORT 2 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="/images/blandebatteri.jpg" class="card-img-top" alt="Blandebatteri">
+        <div class="card-body">
+          <h5 class="card-title">Blandebatteri</h5>
+          <p class="card-text">Styrer varmt og kaldt vann – finnes til kjøkken, servant og dusj.</p>
+        </div>
+      </div>
+    </div>
+    <!-- KORT 3 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="/images/vannlås.jpg" class="card-img-top" alt="Vannlås">
+        <div class="card-body">
+          <h5 class="card-title">Vannlås</h5>
+          <p class="card-text">Bøy under vasken som stopper vond lukt fra å komme opp fra avløpet.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Flere kort -->
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="/images/dusjarmatur.jpg" class="card-img-top" alt="Dusjarmatur">
+        <div class="card-body">
+          <h5 class="card-title">Dusjarmatur</h5>
+          <p class="card-text">Batteri til dusjen – regulerer temperatur og trykk.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="/images/stoppekran.jpg" class="card-img-top" alt="Stoppekran">
+        <div class="card-body">
+          <h5 class="card-title">Stoppekran</h5>
+          <p class="card-text">Brukes for å stenge vanntilførsel. Viktig ved lekkasje eller installasjon.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="/images/vanntilkobling.jpg" class="card-img-top" alt="Vanntilkobling">
+        <div class="card-body">
+          <h5 class="card-title">Vanntilkobling</h5>
+          <p class="card-text">Punkt hvor vann kobles til f.eks. vaskemaskin eller dusj.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer py-3">
+  <div class="container text-center">
+    <p>&copy; 2025 Vann og Rør AS</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>
