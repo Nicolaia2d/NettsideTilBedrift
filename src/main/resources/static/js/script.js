@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (response.ok) {
                 form.reset();
-                confirmation.style.display = "block";
+                confirmation.classList.add("show");
                 console.log("✅ Skjema sendt!");
             } else {
                 alert("❌ Noe gikk galt med innsendingen. Prøv igjen.");

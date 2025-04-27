@@ -1,0 +1,25 @@
+# RørleggerNettside
+
+Dette er en nettside for en rørleggerbedrift laget med Spring Boot + Bootstrap.
+
+## Teknologi
+- Spring Boot 3
+- PostgreSQL
+- Thymeleaf
+- Bootstrap 5
+- Java 17
+
+## Oppstart
+```bash
+mvn clean package
+java -jar target/rorleggerNettside-0.0.1-SNAPSHOT.jar
+
+---
+
+## 2. Forberede database (PostgreSQL) på serveren
+
+- Når du får server, installer PostgreSQL:
+
+```bash
+sudo apt update
+sudo apt install postgresql postgresql-contrib

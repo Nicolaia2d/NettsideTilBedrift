@@ -1,30 +1,36 @@
-
-
-/* Kropp */
+/* ========================
+   Generelle innstillinger
+=========================== */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #cfd2d4, #e4e6e8);
     color: #000;
-    min-height: 100vh;
     margin: 0;
+    min-height: 100vh;
 }
 
-/* Logo */
-.logo {
-    height: 40px;
-    width: auto;
-}
 html {
     scroll-behavior: smooth;
 }
 
-.bedriftNavn {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #003366;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* ========================
+   Navbar og Logo
+=========================== */
+.navbar {
+    min-height: 70px;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    height: 50px;
+    object-fit: contain;
+}
+
+.logo-navn {
+    height: 50px;
+    object-fit: contain;
+    transform: scale(3.5);
+    transform-origin: left center;
 }
 
 .navbar a {
@@ -41,11 +47,15 @@ html {
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
-    color: inherit;
-    padding-right: 1.5em;
 }
 
-/* Hero-seksjon */
+#tjenester {
+    padding-top: 3rem; /* Øker avstanden fra navbar */
+}
+
+/* ========================
+   Hero Section
+=========================== */
 .hero-section {
     text-align: center;
     padding: 4rem 2rem;
@@ -59,153 +69,154 @@ html {
 .subheading {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #333;
 }
 
+/* ========================
+   CTA Button
+=========================== */
 .cta-btn {
     background: #000;
     color: #fff;
-    border: none;
     padding: 1rem 2rem;
     font-size: 1rem;
-    cursor: pointer;
+    border: none;
     border-radius: 0.3rem;
+    cursor: pointer;
 }
 
 .cta-btn:hover {
     background: #333;
 }
 
+/* ========================
+   Image Section
+=========================== */
+/* Oppdater image-section for perfekt sentrering */
 .image-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding-top: 1rem; /* Mindre toppmargen */
+    padding-bottom: 2rem; /* Fortsatt luft under bildet */
+    margin-top: -2rem; /* Løfter hele bilde-seksjonen opp */
 }
 
+/* Gjør også bilde-containeren fleksibel */
+.image-placeholder {
+    max-width: 800px; /* Ikke for bredt */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Selve bildet */
 .image-placeholder img {
-    display: block;
-    margin: 0 auto;
-    max-width: 50%; /* eller en annen ønsket bredde */
+    max-width: 100%;
     height: auto;
+    display: block;
 }
 
+
+/* ========================
+   FAQ Section
+=========================== */
 .faq-section {
     max-width: 800px;
     margin: 3rem auto;
-    padding: 0 1rem;
-}
-
-.faq-section h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.faq-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.faq-item {
-    border-bottom: 1px solid #ccc;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .faq-question {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     cursor: pointer;
-}
-
-.faq-question span {
     font-weight: 500;
-    font-size: 1.1rem;
 }
 
 .toggle-answer {
     background: none;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
 .faq-answer {
-    display: none; /* skjult som standard */
+    display: none;
     margin-top: 1rem;
     font-size: 0.95rem;
-    line-height: 1.4;
     color: #444;
 }
 
-/* Befarings/skjema-siden */
+/* ========================
+   Skjemaseksjon
+=========================== */
 .contact-form {
-    background-color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
     border-radius: 0.75rem;
     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.05);
+    margin-top: 3rem;
 }
 
-/* Justerer inputfelter for et rent uttrykk */
 .contact-form .form-control {
     border-radius: 0.2rem;
     border: 1px solid #ccc;
 }
 
-/* For å få litt luft rundt skjemaet, sentrert i sin container */
-header .contact-form {
-    margin-top: 3rem;
-}
 .form-check-input {
     width: 1.3em;
     height: 1.3em;
-    cursor: pointer;
     border: 2px solid #003366;
 }
 
 .form-check-input:checked {
     background-color: #003366;
-    border-color: #003366;
-}
-.form-check-input:hover {
-    border-color: #0056b3;
 }
 
-fieldset {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    border-radius: 0.5rem;
+#confirmation {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
-/* Footer */
+
+#confirmation.show {
+    opacity: 1;
+}
+
+/* ========================
+   Footer
+=========================== */
 .footer {
+    background: rgba(255, 255, 255, 0.3);
     text-align: center;
     padding: 1rem;
-    font-size: 0.9rem;
-    background: rgba(255, 255, 255, 0.3);
     margin-top: 2rem;
 }
 
-/* Mørk modus (valgfritt) */
+/* ========================
+   Mørk modus
+=========================== */
 body.dark-mode {
     background: linear-gradient(120deg, #242424, #515151);
-    color: #fff;
+    color: #e4e4e4;
 }
 
-body.dark-mode .logo {
-    background: #666;
-    color: #fff;
+body.dark-mode .navbar,
+body.dark-mode .footer {
+    background-color: #1e1e1e;
 }
 
-body.dark-mode .cta-btn {
-    background: #fff;
-    color: #000;
+body.dark-mode a {
+    color: #9ecbff;
 }
 
-body.dark-mode .cta-btn:hover {
-    background: #ccc;
+body.dark-mode .card {
+    background-color: #2a2a2a;
+    color: #e4e4e4;
 }
 
-/* Tjenestekort */
+/* ========================
+   Kort (kortbasert layout)
+=========================== */
 .card {
     border-radius: 1rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -218,118 +229,22 @@ body.dark-mode .cta-btn:hover {
 }
 
 .card-body i {
-    color: #0d6efd; /* Bootstrap primærfarge */
-}
-
-.card-title {
-    font-weight: 600;
-    font-size: 1.25rem;
-}
-
-.card-text {
-    color: #6c757d;
-    font-size: 0.95rem;
-}
-
-/* Seksjon med tjenester */
-section.container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-section h2 {
-    font-size: 2rem;
-}
-
-section p.text-muted {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-}
-
-/*
-om oss
- */
-/* OM OSS-seksjon */
-section h2 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-section p,
-section li {
-    font-size: 1rem;
-    color: #444;
-}
-
-.rounded-circle {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
-
-ul.list-unstyled li::before {
-    content: "✔ ";
     color: #0d6efd;
 }
+
 @media (max-width: 576px) {
-    .rounded-circle {
-        width: 80px;
-        height: 80px;
+    .image-placeholder img {
+        max-width: 90%;
+        height: auto;
     }
 
-    .nav-right {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-right a {
-        margin-bottom: 0.5rem;
+    .hero-section .display-6 {
+        font-size: 1.8rem; /* Justerer størrelsen på nummeret */
     }
 }
-body.dark-mode {
-    background-color: #121212;
-    color: #e4e4e4;
-}
 
-body.dark-mode .navbar,
-body.dark-mode .footer {
-    background-color: #1e1e1e;
-    color: #fff;
-}
-
-body.dark-mode a {
-    color: #9ecbff;
-}
-
-body.dark-mode .card {
-    background-color: #2a2a2a;
-    color: #e4e4e4;
-}
-#forklaringer .card-img-top {
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
-
-#forklaringer .card {
-    border-radius: 1rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: #f8f9fa;
-}
-
-#forklaringer .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1);
-}
-
-#forklaringer .card-title {
-    font-weight: 600;
-}
-#begrepSok {
-    max-width: 400px;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+@media (max-width: 576px) {
+    #tjenester {
+        padding-top: 5rem; /* Litt mindre luft på små skjermer */
+    }
 }
