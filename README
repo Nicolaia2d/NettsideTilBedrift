@@ -1,25 +1,84 @@
-# RørleggerNettside
+# 💧 Vann & Rør AS – Rørleggertjenester på nett
 
-Dette er en nettside for en rørleggerbedrift laget med Spring Boot + Bootstrap.
+Dette er en profesjonell nettside utviklet for **Vann og Rør AS**, et rørleggerfirma.
+Prosjektet er utviklet som en moderne og brukervennlig plattform hvor kunder kan bestille befaring, lese om tjenester,
+og få nyttige tips og kundehistorier.
 
-## Teknologi
-- Spring Boot 3
-- PostgreSQL
-- Thymeleaf
-- Bootstrap 5
-- Java 17
+## 🛠️ Teknologier brukt
 
-## Oppstart
-```bash
-mvn clean package
-java -jar target/rorleggerNettside-0.0.1-SNAPSHOT.jar
+| Lag | Teknologi |
+|-----|-----------|
+| **Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript |
+| **Backend** | Spring Boot (Java) |
+| **Databaseløsning** | PostgreSQL (tidligere H2 brukt i utvikling) |
+| **Templating** | Thymeleaf |
+| **Byggverktøy** | Maven |
+| **Miljø** | Java 17, IntelliJ IDEA, Git |
+
+## 🚀 Funksjonalitet
+
+- ✅ **Responsivt design** (mobil, nettbrett og desktop)
+- 📄 **Skjema for befaring** med valgfri bildeopplasting
+- 📬 Skjemadata sendes til backend-API og lagres i database
+- 📦 Kundedata håndteres med Spring Data JPA og REST API
+- 🌙 **Mørk modus** (valgfri visuell stil)
+- 🧠 Roterende placeholder-hint og FAQ
+- 📖 **VVS-ordbok** og forklaringer for sluttbrukere
+- ✅ Klart til hosting på egendefinert domene
+
+## 🗃️ Prosjektstruktur
+
+├── src
+│ ├── main
+│ │ ├── java
+│ │ │ └── com.home.rorleggernettside
+│ │ │ ├── controller
+│ │ │ ├── model
+│ │ │ └── repository
+│ │ └── resources
+│ │ ├── static (css, js, images)
+│ │ └── templates (Thymeleaf HTML-filer)
+├── application.properties
+├── pom.xml
+
+
+## 🔐 Klar for produksjon
+
+- ✅ Kan enkelt deployeres til tjenester som [Render](https://render.com), [Fly.io](https://fly.io) eller en VPS med PostgreSQL og HTTPS.
+- 🌍 Støtte for egendefinert domene (f.eks. vannogror.no)
+- 🔒 Klar til å implementere brukerpålogging, adminpanel, og sikkerhetslag med Spring Security (valgfritt)
+
+## 📌 Hva jeg har lært
+
+- Fullstendig oppsett av en **fullstack-applikasjon** (Java Spring + Bootstrap frontend)
+- Bruk av **API-er**, skjemaopplasting og database
+- Strukturert frontend-utvikling med **modulær CSS/JS**
+- Profesjonell utviklingsprosess med **Git** og IntelliJ IDEA
+- Fokus på **tilgjengelighet, ytelse og brukeropplevelse**
+
+## 📸 Demo eller skjermbilder
+
+> Se `/images`-mappen eller last opp skjermbilder på GitHub Pages / README.io / LinkedIn-profil
+
+## 🧑‍💼 Relevant for arbeidsgivere
+
+Dette prosjektet viser:
+
+- Evne til å utvikle **realistiske løsninger** for småbedrifter
+- **Brukerfokusert design** og god UI/UX-forståelse
+- God **kodeorganisering**, Git-bruk og dokumentasjon
+- Evne til å jobbe med **Java backend** og **moderne frontend**
+- Erfaring med **skjemahåndtering, REST API, databasestruktur**
+
+## 🔄 Videre utvikling (TODO)
+
+- [ ] Legge til bekreftelsesside med status
+- [ ] Lage adminpanel for å se innkomne befaringer
+- [ ] Oppsett for produksjon (CI/CD, Docker)
+- [ ] Google Analytics eller Hotjar for innsikt
+- [ ] E-postvarsling ved nye skjema (SMTP-integrasjon)
 
 ---
 
-## 2. Forberede database (PostgreSQL) på serveren
-
-- Når du får server, installer PostgreSQL:
-
-```bash
-sudo apt update
-sudo apt install postgresql postgresql-contrib
+🧑‍💻 *Utviklet med kjærlighet og presisjon av Nicolai –
+IT-student med interesse for teknologi, webutvikling og brukeropplevelse.*
