@@ -28,9 +28,8 @@ html {
 
 .logo-navn {
     height: 50px;
+    max-width: 200px; /* juster etter behov */
     object-fit: contain;
-    transform: scale(3.5);
-    transform-origin: left center;
 }
 
 .navbar a {
